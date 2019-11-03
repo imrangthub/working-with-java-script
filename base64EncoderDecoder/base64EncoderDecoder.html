@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="../custom/application.css" rel="stylesheet">
+    <script src="../custom/application.js"></script>
+    <script src="base64EncoderDecoder.js"></script>
+</head>
+<body>
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="base64EncoderDecoder.html">base64</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </li>
+    </ul>
+    <header>
+        <h2>Base64 Endoding and Decoding</h2>
+    </header>
+    <div id="main">
+        <leftsidebar>
+            <table>
+                <tr>
+                    <td>Enter String to Base64 encode:</td>
+                    <td><input type="text" id="txtEncode" /></td>
+                    <td>
+                        <button onClick="doEncode()">Endoce</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Result:</td>
+                    <td><span id="resultEecoded"></span></td>
+                </tr>
+            </table>
+        </leftsidebar>
+        <middlebar></middlebar>
+        <rightsidebar>
+            <table>
+                <tr>
+                    <td>Enter encoded text for decode:</td>
+                    <td><input type="text" id="txtDecode" /></td>
+                    <td>
+                        <button onClick="doDncode()">Dndoce</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Result:</td>
+                    <td><span id="resultDecoded"></span></td>
+                </tr>
+            </table>
+        </rightsidebar>
+    </div>
+
+
+    <footer>Footer</footer>
+</body>
+
+</html>
