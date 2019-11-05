@@ -4,8 +4,15 @@
 <head>
     <link href="../custom/application.css" rel="stylesheet">
     <script src="../custom/application.js"></script>
+
+    <script src="../vendor/crypto-js/core.js"></script>
+    <script src="../vendor/crypto-js/enc-base64.js"></script>
+    <script src="../vendor/crypto-js/hmac.js"></script>
+    <script src="../vendor/crypto-js/sha256.js"></script>
+
     <script src="base64EncoderDecoder.js"></script>
 </head>
+
 <body>
     <ul>
         <li><a href="../index.html">Home</a></li>
@@ -27,31 +34,42 @@
             <table>
                 <tr>
                     <td>Enter String to Base64 encode:</td>
-                    <td><input type="text" id="txtEncode" /></td>
-                    <td>
+                    <td><textarea id="txtEncode"></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="float-right">
                         <button onClick="doEncode()">Endoce</button>
                     </td>
                 </tr>
-                <tr>
-                    <td>Result:</td>
-                    <td><span id="resultEecoded"></span></td>
-                </tr>
+
             </table>
         </leftsidebar>
-        <middlebar></middlebar>
+        <middlebar>
+            <div class="result-div-150">
+                <span>Eecoded Result</span>
+                <hr>
+                <span id="resultEecoded"></span>
+            </div>
+            <div class="result-div-150">
+                <span>Decoded Result</span>
+                <hr>
+                <span id="resultDecoded"></span>
+            </div>
+        </middlebar>
         <rightsidebar>
             <table>
                 <tr>
                     <td>Enter encoded text for decode:</td>
-                    <td><input type="text" id="txtDecode" /></td>
-                    <td>
-                        <button onClick="doDncode()">Dndoce</button>
-                    </td>
+                    <td><textarea id="txtDecode"></textarea></td>
                 </tr>
                 <tr>
-                    <td>Result:</td>
-                    <td><span id="resultDecoded"></span></td>
+                    <td></td>
+                    <td class="float-right">
+                        <button onClick="doDncode()">Endoce</button>
+                    </td>
                 </tr>
+
             </table>
         </rightsidebar>
     </div>
