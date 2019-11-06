@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="../../custom/application.css" rel="stylesheet">
+</head>
+
+<body>
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../base64EncoderDecoder/base64EncoderDecoder.html">base64</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">HTTP</a>
+            <div class="dropdown-content">
+                <a href="createJwtToken.html">Creare jwt Token</a>
+            </div>
+        </li>
+    </ul>
+    <header>
+        <h2>Create Jwt Token</h2>
+    </header>
+
+    <div id="main">
+        <leftsidebar>
+            <table>
+                <tr>
+                    <td>JWT Header :</td>
+                    <td><textarea class="default-textarea" id="jwtHeader"></textarea></td>
+                </tr>
+                <tr>
+                    <td>JWT Payload :</td>
+                    <td><textarea class="default-textarea" id="jwtPayload"></textarea></td>
+                </tr>
+                <tr>
+                    <td>JWT Secret :</td>
+                    <td><input type="text" id="jwtSecret" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="float-right">
+                        <button onClick="onCreateJwt()"> Make Jwt</button>
+                    </td>
+                </tr>
+
+            </table>
+        </leftsidebar>
+        <middlebar>
+            <div class="result-div-150">
+                <span>Eecoded Header: </span>
+                <hr>
+                <span id="ecodedHeader"></span>
+            </div>
+            <div class="result-div-150">
+                <span>Eecoded Payload</span>
+                <hr>
+                <span id="ecodedPayload"></span>
+            </div>
+            <div class="result-div-150">
+                <span>Eecoded Signature</span>
+                <hr>
+                <span id="jwtSignatureVal"></span>
+            </div>
+        </middlebar>
+        <rightsidebar>
+            <div class="result-div-150" style="background: lightskyblue; padding: 10px;">
+                <span> Jwt Token:</span>
+                <hr>
+                <span id="resultJwtToken"></span>
+            </div>
+        </rightsidebar>
+    </div>
+
+    <footer>imranmadbar@gmail.com</footer>
+    <script src="../../vendor/crypto-js/core.js"></script>
+    <script src="../../vendor/crypto-js/enc-base64.js"></script>
+    <script src="../../vendor/crypto-js/hmac.js"></script>
+    <script src="../../vendor/crypto-js/sha256.js"></script>
+    <script src="../../custom/application.js"></script>
+    <script src="createJwtToken.js"></script>
+</body>
+
+</html>

@@ -92,5 +92,11 @@
   }
 
 
+  .default-textarea {
+    margin: 0px;
+    width: 300px;
+    height: 60px;
+  }
+
 
   

@@ -34,7 +34,7 @@ const makeHttpRequest = (method, url, data) => {
 
 const getDataReq = () => {
   console.log("getDataReq:");
-  makeHttpRequest('GET', 'http://localhost:8090/ap/consulation/list', {}).then(resData => {
+  makeHttpRequest('GET', 'http://localhost:8090/api/consulation/list', {}).then(resData => {
     console.log("RES# ", resData);
   })
   .catch(err => {

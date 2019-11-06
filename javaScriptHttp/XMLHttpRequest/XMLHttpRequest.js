@@ -9,12 +9,11 @@
     const xhr = new XMLHttpRequest();
     xhr.open('GET', 'http://localhost:8090/api/consulation/list')
     xhr.responseType = 'json';
-
-    xhr.onload = () => {
+    xhr.onload = function(){
      // const resData = JSON.parse(xhr.response);
      const resData = xhr.response;
       console.log("RES# ", resData);
-      resultShow.innerText =JSON.stringify (resData.items);
+      resultShow.innerText = JSON.stringify (resData.items);
 
     }
 
