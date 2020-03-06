@@ -21,17 +21,24 @@
         <h2>XMLHttpRequest</h2>
     </header>
     <div id="main">
-        <leftsidebar>
+            <leftsidebar>
             <div class="row" style="padding: 20px;">
-                <button class="btn btn-info" id="getReqBtn">GET REQUEST</button>
-		
+         
+			     <label for="getUrlValue">Url:</label>
+                 <input class="http-input-style" type="text" id="getUrlValue" name="urlValue"><br><br>
+				        <button class="btn btn-info" id="getReqBtn">GET REQUEST</button>
             </div>
             
             <div class="row" style="padding: 20px;">
-                <button class="btn btn-primary" id="postReqBtn">POST REQUEST</button>
+             
+					 <label for="postUrlValue">Url:</label>
+                 <input class="http-input-style" type="text" id="postUrlValue" name="postUrlValue"><br><br>
+				    <button class="btn btn-primary" id="postReqBtn">POST REQUEST</button>
             </div>
             
             <div class="row" style="padding: 20px;">
+				 <label for="rawUrlValue">Url:</label>
+                 <input class="http-input-style" type="text" id="rawUrlValue" name="rawUrlValue"><br><br>
                 <button class="btn btn-success" id="postReqBtnRaw">POST REQUEST RAW</button>
             </div>  
         </leftsidebar>
